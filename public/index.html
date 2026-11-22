@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arto Remes</title>
+<meta name="description" content="Arto Remes on oululainen yrittäjä, neuvonantaja ja aktiivinen omistaja. Yli 25 vuoden kokemus mediasta, markkinoinnista ja liiketoiminnan kehittämisestä.">
+<meta property="og:title" content="Arto Remes">
+<meta property="og:description" content="Kokemusta, uteliaisuutta ja uusia näkökulmia. Yrittäjä, neuvonantaja ja aktiivinen omistaja.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://artoremes.fi/">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:site_name" content="Arto Remes">
+<meta property="og:image" content="https://artoremes.fi/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Arto Remes. Kokemusta, uteliaisuutta ja uusia näkökulmia.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Arto Remes">
+<meta name="twitter:description" content="Kokemusta, uteliaisuutta ja uusia näkökulmia. Yrittäjä, neuvonantaja ja aktiivinen omistaja.">
+<meta name="twitter:image" content="https://artoremes.fi/og-image.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://artoremes.fi/">
+<meta name="theme-color" content="#12100d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: aurora-lit hero over an asymmetric editorial grid; wide geometric display type, sticky section headings, dark contact panel. */
+:root {
+  --bg: #f5f1ea;
+  --surface: #fffdf9;
+  --ink: #1a1612;
+  --muted: #6a6258;
+  --line: #ddd5c8;
+  --accent: #0a7466;
+  --accent-ink: #ffffff;
+  --aurora-1: rgba(32, 201, 151, .34);
+  --aurora-2: rgba(42, 165, 201, .28);
+  --aurora-3: rgba(124, 108, 240, .18);
+  --grid: rgba(26, 22, 18, .035);
+  --font-display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --font-body: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12100d; --surface: #1b1814; --ink: #f4efe8; --muted: #a89f92;
+    --line: #2e2923; --accent: #4fd8bd; --accent-ink: #04201a;
+    --aurora-1: rgba(32, 201, 151, .42); --aurora-2: rgba(42, 165, 201, .36); --aurora-3: rgba(124, 108, 240, .28);
+    --grid: rgba(244, 239, 232, .05);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12100d; --surface: #1b1814; --ink: #f4efe8; --muted: #a89f92;
+  --line: #2e2923; --accent: #4fd8bd; --accent-ink: #04201a;
+  --aurora-1: rgba(32, 201, 151, .42); --aurora-2: rgba(42, 165, 201, .36); --aurora-3: rgba(124, 108, 240, .28);
+  --grid: rgba(244, 239, 232, .05);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 17px; line-height: 1.65;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.wrap { width: min(1160px, 100% - 40px); margin-inline: auto; position: relative; }
+
+/* Nav */
+.nav {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter: blur(16px) saturate(1.4); -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  border-bottom: 1px solid var(--line);
+}
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+.brand { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; text-decoration: none; font-family: var(--font-display); font-weight: 500; font-size: 14px; letter-spacing: -0.06em; color: var(--accent-ink); background: linear-gradient(135deg, var(--accent), #2aa5c9); box-shadow: 0 0 22px var(--aurora-1); }
+.nav ul { display: flex; gap: 30px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+.nav ul a { text-decoration: none; color: var(--muted); transition: color .15s; }
+.nav ul a:hover { color: var(--ink); }
+.nav .cta { font-size: 14px; font-weight: 500; text-decoration: none; background: var(--ink); color: var(--bg); padding: 9px 18px; border-radius: 999px; transition: transform .15s; }
+.nav .cta:hover { transform: translateY(-1px); }
+
+.menu-btn { display: none; place-items: center; width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; padding: 0; }
+.menu-btn svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; }
+.menu-btn .x { display: none; }
+.nav.open .menu-btn .bars { display: none; }
+.nav.open .menu-btn .x { display: block; }
+
+/* Hero with aurora */
+.hero-bg { position: relative; overflow: hidden; isolation: isolate; }
+.hero-bg::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 20%, transparent 75%);
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 20%, transparent 75%);
+}
+.aurora { position: absolute; inset: -20% -10% auto -10%; height: 120%; z-index: -2; filter: blur(70px); pointer-events: none; }
+.aurora span { position: absolute; border-radius: 50%; }
+.aurora .a { width: 52%; height: 60%; left: 4%; top: 6%; background: var(--aurora-1); animation: drift1 18s ease-in-out infinite alternate; }
+.aurora .b { width: 46%; height: 54%; right: 6%; top: 0; background: var(--aurora-2); animation: drift2 22s ease-in-out infinite alternate; }
+.aurora .c { width: 36%; height: 40%; left: 38%; top: 28%; background: var(--aurora-3); animation: drift3 26s ease-in-out infinite alternate; }
+@keyframes drift1 { to { transform: translate(8%, 10%) scale(1.12); } }
+@keyframes drift2 { to { transform: translate(-10%, 14%) scale(.92); } }
+@keyframes drift3 { to { transform: translate(6%, -8%) scale(1.2); } }
+
+.hero { padding: clamp(56px, 9vw, 120px) 0 clamp(56px, 8vw, 104px); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 400px); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.hero-photo { margin: 0; }
+.hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 35% 40%; border-radius: 24px; border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent); box-shadow: 0 40px 80px -40px rgba(0,0,0,.5); }
+.hero-grid > div { position: relative; z-index: 1; }
+.hero-sub { display: grid; gap: 20px; max-width: 52ch; }
+.hero-sub .tagline, .hero-sub .lead { margin: 0; }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; margin: 0 0 28px; padding: 7px 14px 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: color-mix(in srgb, var(--surface) 70%, transparent); backdrop-filter: blur(6px); }
+.eyebrow i { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: block; }
+h1 {
+  font-family: var(--font-display); font-weight: 500;
+  font-size: clamp(52px, 9.6vw, 136px); line-height: .98; letter-spacing: -0.05em;
+  margin: 0 0 clamp(28px, 4vw, 56px);
+}
+h1 span { display: block; }
+h1 .grad { background: linear-gradient(100deg, var(--accent) 10%, #2aa5c9 60%, #7c6cf0 100%); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .08em; }
+.tagline { font-size: clamp(22px, 2.8vw, 32px); font-weight: 500; line-height: 1.25; letter-spacing: -0.02em; margin: 0 0 20px; max-width: 22ch; text-wrap: balance; }
+.lead { font-size: 19px; color: var(--muted); max-width: 54ch; margin: 0; }
+
+.rail { margin: 0; display: grid; gap: 12px; }
+.rail div { padding: 18px 20px; border: 1px solid var(--line); border-radius: 18px; background: color-mix(in srgb, var(--surface) 72%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.rail dt { font-size: 13px; color: var(--muted); margin: 0 0 4px; }
+.rail dd { margin: 0; font-weight: 500; line-height: 1.4; }
+.rail .big { font-family: var(--font-display); font-size: 44px; line-height: 1.05; letter-spacing: -0.04em; font-weight: 500; }
+.rail .big small { font-size: 16px; letter-spacing: 0; font-family: var(--font-body); color: var(--muted); font-weight: 400; margin-left: 6px; }
+
+/* Sections */
+section.block { border-top: 1px solid var(--line); padding: clamp(48px, 7vw, 96px) 0; }
+.cols { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: clamp(24px, 6vw, 80px); align-items: start; }
+.head { position: sticky; top: 100px; }
+.num { display: block; font-family: var(--font-display); font-size: clamp(64px, 8vw, 104px); line-height: 1; font-weight: 500; letter-spacing: -0.05em; color: transparent; -webkit-text-stroke: 1.5px color-mix(in srgb, var(--accent) 70%, transparent); margin-bottom: 16px; }
+h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 2.8vw, 34px); line-height: 1.15; letter-spacing: -0.035em; margin: 0; text-wrap: balance; }
+.prose { max-width: 62ch; }
+.prose p { margin: 0 0 1.25em; }
+.prose p a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; font-weight: 500; transition: text-decoration-thickness .15s; }
+.prose p a:hover { text-decoration-thickness: 2px; }
+.prose p:last-child { margin-bottom: 0; }
+.prose p:first-of-type:not(.pull) { font-size: 20px; line-height: 1.55; }
+.pull { font-family: var(--font-display); font-size: clamp(20px, 2.2vw, 26px); line-height: 1.35; letter-spacing: -0.03em; font-weight: 500; margin: 1.6em 0 !important; padding: 28px 30px; border-radius: 20px; background: var(--surface); border: 1px solid var(--line); position: relative; overflow: hidden; }
+.pull::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: linear-gradient(var(--accent), #2aa5c9); }
+.tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0 0 1.8em; padding: 0; list-style: none; }
+.tiles li { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border: 1px solid var(--line); background: var(--surface); border-radius: 16px; font-weight: 500; line-height: 1.3; transition: transform .2s, border-color .2s; }
+.tiles li:hover { transform: translateY(-2px); border-color: var(--accent); }
+.tiles svg { flex: none; width: 28px; height: 28px; stroke: var(--accent); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 1.8em; padding: 0; list-style: none; }
+.chips li { font-size: 14px; font-weight: 500; border: 1px solid var(--line); background: var(--surface); padding: 6px 15px; border-radius: 999px; }
+
+/* Contact */
+.contact { position: relative; overflow: hidden; isolation: isolate; background: #12100d; color: #f4efe8; border-radius: 28px; padding: clamp(32px, 5vw, 72px); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 40px; align-items: end; }
+.contact::before { content: ""; position: absolute; inset: -30% -10% auto 30%; height: 160%; z-index: -1; background: radial-gradient(closest-side, rgba(32,201,151,.35), transparent), radial-gradient(closest-side at 80% 30%, rgba(42,165,201,.3), transparent); filter: blur(50px); }
+.contact h2 { color: #f4efe8; font-size: clamp(30px, 4.4vw, 56px); line-height: 1.05; }
+.contact p { margin: 18px 0 0; max-width: 46ch; color: rgba(244,239,232,.72); }
+.links { display: flex; flex-direction: column; gap: 10px; min-width: 280px; }
+.btn { display: flex; justify-content: space-between; align-items: center; gap: 24px; text-decoration: none; padding: 16px 22px; border-radius: 16px; font-weight: 500; border: 1px solid rgba(244,239,232,.25); transition: background .15s, color .15s, transform .15s; }
+.btn:hover { background: #f4efe8; color: #12100d; transform: translateY(-1px); }
+.btn.primary { background: #4fd8bd; color: #04201a; border-color: #4fd8bd; }
+.btn.primary:hover { background: #f4efe8; border-color: #f4efe8; }
+.addr { font-size: 14px; color: rgba(244,239,232,.6); margin-top: 4px; }
+
+footer { padding: 36px 0 52px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .hero-grid, .cols, .contact { grid-template-columns: 1fr; }
+  .head { position: static; }
+  .hero-photo { max-width: 360px; }
+  .nav ul { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; gap: 0; padding: 6px 20px 14px; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .nav.open ul { display: flex; }
+  .nav ul li + li { border-top: 1px solid var(--line); }
+  .nav ul a { display: block; padding: 15px 0; font-size: 17px; color: var(--ink); }
+  .nav .cta { margin-left: auto; }
+  .menu-btn { display: grid; margin-left: 10px; }
+  .links { min-width: 0; }
+}
+@media (max-width: 620px) {
+  body { font-size: 16px; }
+  .rail { grid-template-columns: 1fr; }
+  .prose p:first-of-type:not(.pull) { font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Arto Remes, etusivu">AR</a>
+    <ul id="nav-links">
+      <li><a href="#minusta">Minusta</a></li>
+      <li><a href="#nykyisin">Mitä teen nykyisin</a></li>
+      <li><a href="#muuta">Muutakin kuin työtä</a></li>
+    </ul>
+    <a class="cta" href="#yhteys">Ota yhteyttä</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Avaa valikko">
+      <svg class="bars" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      <svg class="x" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero-bg">
+    <div class="aurora" aria-hidden="true"><span class="a"></span><span class="b"></span><span class="c"></span></div>
+    <div class="wrap hero">
+      <div class="hero-grid">
+        <div>
+          <h1><span>Arto</span><span class="grad">Remes</span></h1>
+          <div class="hero-sub">
+            <p class="tagline">Kokemusta, uteliaisuutta ja uusia näkökulmia.</p>
+            <p class="lead">Yrittäjä, neuvonantaja ja aktiivinen omistaja. Minua kiinnostavat liiketoiminnan kehittäminen, teknologian mahdollisuudet ja jatkuva uuden oppiminen.</p>
+          </div>
+        </div>
+        <figure class="hero-photo"><img src="arto-hero.jpg" width="960" height="1200" alt="Arto Remes" fetchpriority="high"></figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="block" id="minusta">
+      <div class="cols">
+        <div class="head"><span class="num">01</span><h2>Minusta</h2></div>
+        <div class="prose">
+          <p>Olen oululainen yrittäjä, jolla on yli 25 vuoden kokemus mediasta, markkinoinnista ja liiketoiminnan kehittämisestä.</p>
+          <p>Työurani aikana olen perustanut yrityksiä, rakentanut ja kehittänyt liiketoimintaa sekä työskennellyt erilaisten yritysten ja organisaatioiden kanssa. Olen nähnyt läheltä, miten teknologia, markkinat ja toimintatavat muuttuvat.</p>
+          <p class="pull">Vuosien varrella olen oppinut, että kokemus on arvokasta, mutta uteliaisuus ja halu uudistua ovat vähintään yhtä tärkeitä.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="nykyisin">
+      <div class="cols">
+        <div class="head"><span class="num">02</span><h2>Mitä teen nykyisin</h2></div>
+        <div class="prose">
+          <ul class="tiles">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l5-5 4 4 8-9"/><path d="M15 7h5v5"/></svg>Markkinointi</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>Liiketoiminnan kehittäminen</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>Tekoäly</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>Aktiivinen omistajuus</li>
+          </ul>
+          <p>Työskentelen oman yritykseni <a href="https://arviser.fi" target="_blank" rel="noopener">Arviserin</a> kautta markkinoinnin, liiketoiminnan kehittämisen ja tekoälyn parissa. Autan yrityksiä löytämään uusia mahdollisuuksia, kehittämään toimintaansa ja hyödyntämään teknologiaa käytännönläheisesti.</p>
+          <p>Yrittäjyyden lisäksi minua kiinnostaa aktiivinen omistajuus. Olen osakkaana tapahtumatekniikka-alalla toimivissa <a href="https://scenearts.fi" target="_blank" rel="noopener">Scene Artsissa</a> ja <a href="https://sceneartsglobal.com" target="_blank" rel="noopener">SceneArts Globalissa</a>, joiden liiketoiminnan kehittämiseen osallistun markkinoinnin ja muun neuvonannon keinoin.</p>
+          <p>Pidän erityisesti tilanteista, joissa kokemus, uudet ideat ja käytännön tekeminen kohtaavat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="muuta">
+      <div class="cols">
+        <div class="head"><span class="num">03</span><h2>Muutakin kuin työtä</h2></div>
+        <div class="prose">
+          <ul class="tiles">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 6.2A7.2 7.2 0 1 0 17.5 17.8"/><path d="M4.5 10h9.5M4.5 14h9.5"/></svg>Sijoittaminen</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9.5 3v3M14.5 3v3M9.5 18v3M14.5 18v3M3 9.5h3M3 14.5h3M18 9.5h3M18 14.5h3"/><rect x="10" y="10" width="4" height="4"/></svg>Teknologia</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.6 21.5c.1-4.2.3-8.2.6-12"/><path d="M13.2 9.5C11.7 6.5 8.5 5.3 5 6.3"/><path d="M13.2 9.5c-.2-3.5 1.8-5.7 5.3-6.2"/><path d="M13.2 9.5c3-1.6 5.8-1 7.8 1.3"/><path d="M13.2 9.5c-3.2-.2-5.7 1.3-6.8 3.8"/><path d="M13.2 9.5c2.7.9 3.9 3.4 3.5 6"/></svg>Matkustaminen</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 18a8.5 8.5 0 1 1 17 0"/><path d="M12 18l4.2-5.2"/><circle cx="12" cy="18" r="1.2"/><path d="M5.6 12.4l1.1.7M8.4 8.6l.7 1.1M12 7.2v1.3M15.6 8.6l-.7 1.1M18.4 12.4l-1.1.7"/></svg>Moottoripyöräily</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l11-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg>Musiikki</li>
+          </ul>
+          <p>Olen kiinnostunut sijoittamisesta, teknologiasta, matkustamisesta ja uusista kokemuksista. Kesäisin harrastan myös moottoripyöräilyä. Musiikki on kulkenut mukana elämässäni, vaikka aktiivinen soittaminen on viime vuosina jäänyt vähemmälle.</p>
+          <p>Sijoittamisessa minua kiehtoo erityisesti pitkäjänteisyys ja mahdollisuus rakentaa vapautta päättää omasta ajankäytöstäni.</p>
+          <p>Arvostan mahdollisuutta tehdä kiinnostavia asioita, oppia uutta ja käyttää aikaani itselleni merkityksellisellä tavalla.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="yhteys" style="border-top:0; padding-top:0;">
+      <div class="contact">
+        <div>
+          <h2>Ollaan yhteydessä</h2>
+          <p>Uudet ajatukset, kiinnostavat hankkeet ja hyvät keskustelut ovat aina tervetulleita. Minut tavoittaa sähköpostilla tai LinkedInin kautta.</p>
+        </div>
+        <div class="links">
+          <a class="btn primary" href="mailto:arto@arviser.fi">Sähköposti <span aria-hidden="true">→</span></a>
+          <a class="btn" href="https://www.linkedin.com/in/artoremes/" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <span class="addr">arto@arviser.fi</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Arto Remes</span>
+    <span>artoremes.fi</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var nav = document.querySelector('.nav'), btn = document.getElementById('menu-btn');
+  if (!nav || !btn) return;
+  function setOpen(open) {
+    nav.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Sulje valikko' : 'Avaa valikko');
+  }
+  btn.addEventListener('click', function () { setOpen(!nav.classList.contains('open')); });
+  nav.querySelectorAll('ul a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+})();
+</script>
+</body>
+</html>

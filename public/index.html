@@ -160,7 +160,7 @@ h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 
 .timeline li:last-child { border-bottom: 1px solid var(--line); }
 .timeline .yrs { font-family: var(--font-display); font-size: 14px; letter-spacing: -0.02em; color: var(--accent); padding-top: 3px; }
 .timeline strong { display: block; font-weight: 600; font-size: 18px; }
-.timeline .role { display: block; font-weight: 500; font-size: 16px; margin-top: 4px; line-height: 1.4; }
+.timeline .role { display: inline-block; font-weight: 500; font-size: 13px; line-height: 1.3; margin-top: 10px; padding: 5px 12px; border-radius: 999px; color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
 .timeline .what { display: block; color: var(--muted); margin-top: 4px; line-height: 1.5; font-size: 15px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 1.8em; padding: 0; list-style: none; }
 .chips li { font-size: 14px; font-weight: 500; border: 1px solid var(--line); background: var(--surface); padding: 6px 15px; border-radius: 999px; }
@@ -271,15 +271,15 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
         <div class="head"><span class="num">03</span><h2>Tausta</h2></div>
         <div class="prose">
           <ol class="timeline">
-            <li><span class="yrs">2026–</span><div><strong>SceneArts Global</strong><b class="role">Markkinointijohtaja ja osakas</b><span class="what">Kansainvälisten tapahtumien tekninen johtaminen.</span></div></li>
-            <li><span class="yrs">2025–</span><div><strong>Arviser</strong><b class="role">Yrittäjä</b><span class="what">Auttaa yrityksiä luomaan uutta liiketoiminta-arvoa markkinoinnin, datan ja tekoälyn avulla.</span></div></li>
-            <li><span class="yrs">2023–</span><div><strong>Scene Arts</strong><b class="role">Senior Advisor ja osakas</b><span class="what">Yritys- ja vaativien sisätapahtumien tekninen tuotanto.</span></div></li>
-            <li><span class="yrs">2020–2023</span><div><strong>Myynninmaailma</strong><b class="role">Kehitysjohtaja</b><span class="what">B2B-markkinointitoimisto kasvuhakuisille yrityksille.</span></div></li>
-            <li><span class="yrs">2015–2022</span><div><strong>Digimoguli</strong><b class="role">Perustaja ja toimitusjohtaja</b><span class="what">Oululainen digitoimisto, osa Myynninmaailmaa vuodesta 2020.</span></div></li>
-            <li><span class="yrs">2013–2021</span><div><strong>Oz MAX</strong><b class="role">Digitaalisen markkinoinnin neuvonantaja ja osakas</b><span class="what">Liikunta- ja Xtremekeskus.</span></div></li>
-            <li><span class="yrs">2000–2016</span><div><strong>Leffatykki</strong><b class="role">Perustaja ja toimitusjohtaja</b><span class="what">Suomen suurin elokuvayhteisö ja arvostelusivusto. Myytiin isommalle mediayhtiölle.</span></div></li>
-            <li><span class="yrs">2000–2015</span><div><strong>Avalon</strong><b class="role">Kehitysjohtaja ja osakas</b><span class="what">Digitaalisen liiketoiminnan kehitystä.</span></div></li>
-            <li><span class="yrs">1998–2000</span><div><strong>Nedecon</strong><b class="role">Web-suunnittelija</b><span class="what">Uuden median yritys, yksi ensimmäisistä Helsingin pörssiin listatuista alalla.</span></div></li>
+            <li><span class="yrs">2026–</span><div><strong>SceneArts Global</strong><span class="what">Kansainvälisten tapahtumien tekninen johtaminen.</span><b class="role">Markkinointijohtaja ja osakas</b></div></li>
+            <li><span class="yrs">2025–</span><div><strong>Arviser</strong><span class="what">Auttaa yrityksiä luomaan uutta liiketoiminta-arvoa markkinoinnin, datan ja tekoälyn avulla.</span><b class="role">Yrittäjä</b></div></li>
+            <li><span class="yrs">2023–</span><div><strong>Scene Arts</strong><span class="what">Yritys- ja vaativien sisätapahtumien tekninen tuotanto.</span><b class="role">Senior Advisor ja osakas</b></div></li>
+            <li><span class="yrs">2020–2023</span><div><strong>Myynninmaailma</strong><span class="what">B2B-markkinointitoimisto kasvuhakuisille yrityksille.</span><b class="role">Kehitysjohtaja</b></div></li>
+            <li><span class="yrs">2015–2022</span><div><strong>Digimoguli</strong><span class="what">Oululainen digitoimisto, osa Myynninmaailmaa vuodesta 2020.</span><b class="role">Perustaja ja toimitusjohtaja</b></div></li>
+            <li><span class="yrs">2013–2021</span><div><strong>Oz MAX</strong><span class="what">Liikunta- ja Xtremekeskus.</span><b class="role">Digitaalisen markkinoinnin neuvonantaja ja osakas</b></div></li>
+            <li><span class="yrs">2000–2016</span><div><strong>Leffatykki</strong><span class="what">Suomen suurin elokuvayhteisö ja arvostelusivusto. Myytiin isommalle mediayhtiölle.</span><b class="role">Perustaja ja toimitusjohtaja</b></div></li>
+            <li><span class="yrs">2000–2015</span><div><strong>Avalon</strong><span class="what">Digitaalisen liiketoiminnan kehitystä.</span><b class="role">Kehitysjohtaja ja osakas</b></div></li>
+            <li><span class="yrs">1998–2000</span><div><strong>Nedecon</strong><span class="what">Uuden median yritys, yksi ensimmäisistä Helsingin pörssiin listatuista alalla.</span><b class="role">Web-suunnittelija</b></div></li>
           </ol>
 
         </div>

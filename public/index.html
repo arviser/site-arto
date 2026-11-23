@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Arto Remes</title>
-<meta name="description" content="Arto Remes on oululainen yrittäjä, neuvonantaja ja aktiivinen omistaja. Yli 25 vuoden kokemus mediasta, markkinoinnista ja liiketoiminnan kehittämisestä.">
+<title>Arto Remes – Yrittäjä, neuvonantaja ja aktiivinen omistaja</title>
+<meta name="description" content="Arto Remes on yrittäjä, neuvonantaja ja aktiivinen omistaja. Yli 25 vuoden kokemus markkinoinnista, digitaalisesta liiketoiminnasta ja yritysten kasvattamisesta.">
 <meta property="og:title" content="Arto Remes">
-<meta property="og:description" content="Kokemusta, uteliaisuutta ja uusia näkökulmia. Yrittäjä, neuvonantaja ja aktiivinen omistaja, jolla on yli 25 vuoden kokemus mediasta, markkinoinnista ja liiketoiminnan kehittämisestä.">
+<meta property="og:description" content="Kokemusta, uteliaisuutta ja uusia näkökulmia. Yrittäjä, neuvonantaja ja aktiivinen omistaja, jolla on yli 25 vuoden kokemus markkinoinnista, digitaalisesta liiketoiminnasta ja yritysten kasvattamisesta.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://artoremes.fi/">
 <meta property="og:locale" content="fi_FI">
@@ -17,13 +17,13 @@
 <meta property="og:image:alt" content="Arto Remes. Kokemusta, uteliaisuutta ja uusia näkökulmia.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Arto Remes">
-<meta name="twitter:description" content="Kokemusta, uteliaisuutta ja uusia näkökulmia. Yrittäjä, neuvonantaja ja aktiivinen omistaja, jolla on yli 25 vuoden kokemus mediasta, markkinoinnista ja liiketoiminnan kehittämisestä.">
+<meta name="twitter:description" content="Kokemusta, uteliaisuutta ja uusia näkökulmia. Yrittäjä, neuvonantaja ja aktiivinen omistaja, jolla on yli 25 vuoden kokemus markkinoinnista, digitaalisesta liiketoiminnasta ja yritysten kasvattamisesta.">
 <meta name="twitter:image" content="https://artoremes.fi/og-arto.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://artoremes.fi/">
-<meta name="theme-color" content="#12100d">
+<meta name="theme-color" content="#f5f1ea">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
@@ -44,22 +44,6 @@
   --font-display: "Unbounded", "Arial Black", system-ui, sans-serif;
   --font-body: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #12100d; --surface: #1b1814; --ink: #f4efe8; --muted: #a89f92;
-    --line: #2e2923; --accent: #4fd8bd; --accent-ink: #04201a;
-    --aurora-1: rgba(32, 201, 151, .42); --aurora-2: rgba(42, 165, 201, .36); --aurora-3: rgba(124, 108, 240, .28);
-    --grid: rgba(244, 239, 232, .05);
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #12100d; --surface: #1b1814; --ink: #f4efe8; --muted: #a89f92;
-  --line: #2e2923; --accent: #4fd8bd; --accent-ink: #04201a;
-  --aurora-1: rgba(32, 201, 151, .42); --aurora-2: rgba(42, 165, 201, .36); --aurora-3: rgba(124, 108, 240, .28);
-  --grid: rgba(244, 239, 232, .05);
-  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
@@ -114,7 +98,7 @@ a { color: inherit; }
 .hero { padding: clamp(56px, 9vw, 120px) 0 clamp(56px, 8vw, 104px); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 400px); gap: clamp(32px, 6vw, 96px); align-items: center; }
 .hero-photo { margin: 0; }
-.hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 35% 40%; border-radius: 24px; border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent); box-shadow: 0 40px 80px -40px rgba(0,0,0,.5); }
+.hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 5 / 6; object-fit: cover; object-position: 50% 50%; border-radius: 24px; border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent); box-shadow: 0 40px 80px -40px rgba(0,0,0,.5); }
 .hero-grid > div { position: relative; z-index: 1; }
 .hero-sub { display: grid; gap: 20px; max-width: 52ch; }
 .hero-sub .tagline, .hero-sub .lead { margin: 0; }
@@ -128,7 +112,18 @@ h1 {
 h1 span { display: block; }
 h1 .grad { background: linear-gradient(100deg, var(--accent) 10%, #2aa5c9 60%, #7c6cf0 100%); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .08em; }
 .tagline { font-size: clamp(22px, 2.8vw, 32px); font-weight: 500; line-height: 1.25; letter-spacing: -0.02em; margin: 0 0 20px; max-width: 22ch; text-wrap: balance; }
-.lead { font-size: 19px; color: var(--muted); max-width: 54ch; margin: 0; }
+.lead { font-size: 19px; color: var(--ink); opacity: .82; max-width: 54ch; margin: 0; }
+.hero-sub .lead { font-family: var(--font-display); font-size: clamp(21px, 2.4vw, 29px); line-height: 1.3; font-weight: 500; letter-spacing: -0.03em; opacity: 1; max-width: 26ch; text-wrap: balance; }
+.hero-sub .tagline { font-family: var(--font-body, inherit); font-size: 17px; font-weight: 400; color: var(--muted); letter-spacing: 0; max-width: none; margin: 0; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.logos { list-style: none; margin: 36px 0 0; padding: 28px 0 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: center; gap: 28px 44px; }
+.logos img { display: block; opacity: .5; transition: opacity .2s; }
+.logos .l-arviser { height: 26px; width: 117px; }
+.logos .l-sa { height: 22px; width: 131px; }
+
+.hbtn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-size: 15px; font-weight: 500; padding: 13px 22px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); transition: transform .15s, border-color .15s; }
+.hbtn:hover { transform: translateY(-1px); border-color: var(--accent); }
+.hbtn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
 .rail { margin: 0; display: grid; gap: 12px; }
 .rail div { padding: 18px 20px; border: 1px solid var(--line); border-radius: 18px; background: color-mix(in srgb, var(--surface) 72%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
@@ -155,6 +150,23 @@ h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 
 .tiles li { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border: 1px solid var(--line); background: var(--surface); border-radius: 16px; font-weight: 500; line-height: 1.3; transition: transform .2s, border-color .2s; }
 .tiles li:hover { transform: translateY(-2px); border-color: var(--accent); }
 .tiles svg { flex: none; width: 28px; height: 28px; stroke: var(--accent); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; }
+.timeline li { display: grid; grid-template-columns: 210px 1fr; gap: 24px; padding: 20px 0; border-top: 1px solid var(--line); }
+.timeline li:last-child { border-bottom: 1px solid var(--line); }
+.timeline .yrs { display: block; font-family: var(--font-display); font-size: 14px; letter-spacing: -0.02em; color: var(--accent); }
+.timeline .role { display: block; font-weight: 500; font-size: 15px; line-height: 1.4; margin-top: 6px; }
+.timeline strong { display: block; font-weight: 600; font-size: 18px; }
+.timeline .what { display: block; color: var(--muted); margin-top: 4px; line-height: 1.5; font-size: 15px; }
+.sub { font-family: var(--font-display); font-size: 18px; letter-spacing: -0.02em; font-weight: 500; margin: 2.6em 0 10px; }
+.sub-text { color: var(--muted); font-size: 16px; margin: 0 0 22px; max-width: 52ch; }
+.learn { display: grid; gap: 10px; }
+.lr { display: grid; grid-template-columns: 210px 1fr; gap: 24px; align-items: center; }
+.ln { font-size: 15px; font-weight: 500; }
+.lt { position: relative; height: 18px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.lt i { position: absolute; top: 0; bottom: 0; min-width: 14px; border-radius: 999px; background: linear-gradient(90deg, var(--accent), #2aa5c9); }
+.axis .lt { background: none; height: 20px; }
+.axis .lt span { position: absolute; top: 0; transform: translateX(-50%); font-size: 12px; color: var(--muted); }
+.axis .lt span:first-child { transform: none; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 1.8em; padding: 0; list-style: none; }
 .chips li { font-size: 14px; font-weight: 500; border: 1px solid var(--line); background: var(--surface); padding: 6px 15px; border-radius: 999px; }
 
@@ -190,6 +202,9 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
   .rail { grid-template-columns: 1fr; }
   .prose p:first-of-type:not(.pull) { font-size: 18px; }
   .tiles { grid-template-columns: 1fr; gap: 10px; }
+  .timeline li { grid-template-columns: 1fr; gap: 10px; }
+  .lr { grid-template-columns: 1fr; gap: 6px; }
+  .axis .ln { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
 </style>
@@ -202,7 +217,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
     <ul id="nav-links">
       <li><a href="#minusta">Minusta</a></li>
       <li><a href="#nykyisin">Mitä teen nykyisin</a></li>
-      <li><a href="#muuta">Muutakin kuin työtä</a></li>
+      <li><a href="#ura">Tausta</a></li>
     </ul>
     <a class="cta" href="#yhteys">Ota yhteyttä</a>
     <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Avaa valikko">
@@ -220,11 +235,14 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
         <div>
           <h1><span>Arto</span><span class="grad">Remes</span></h1>
           <div class="hero-sub">
-            <p class="tagline">Kokemusta, uteliaisuutta ja uusia näkökulmia.</p>
-            <p class="lead">Yrittäjä, neuvonantaja ja aktiivinen omistaja. Minua kiinnostavat liiketoiminnan kehittäminen, teknologian mahdollisuudet ja jatkuva uuden oppiminen.</p>
+            <p class="lead">Kasvatan yritysten arvoa markkinoinnin, datan ja tekoälyn avulla yrittäjänä, omistajana ja neuvonantajana.</p>
+            <div class="hero-cta">
+              <a class="hbtn primary" href="#yhteys">Ota yhteyttä</a>
+              <a class="hbtn" href="https://www.linkedin.com/in/artoremes/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </div>
-        <figure class="hero-photo"><img src="arto-hero.jpg" width="960" height="1200" alt="Arto Remes" fetchpriority="high"></figure>
+        <figure class="hero-photo"><picture><source srcset="arto-hero.webp" type="image/webp"><img src="arto-hero.jpg" width="900" height="1080" alt="Arto Remes" fetchpriority="high"></picture></figure>
       </div>
     </div>
   </div>
@@ -234,9 +252,10 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
       <div class="cols">
         <div class="head"><span class="num">01</span><h2>Minusta</h2></div>
         <div class="prose">
-          <p>Olen oululainen yrittäjä, jolla on yli 25 vuoden kokemus mediasta, markkinoinnista ja liiketoiminnan kehittämisestä.</p>
-          <p>Työurani aikana olen perustanut yrityksiä, rakentanut ja kehittänyt liiketoimintaa sekä työskennellyt erilaisten yritysten ja organisaatioiden kanssa. Olen nähnyt läheltä, miten teknologia, markkinat ja toimintatavat muuttuvat.</p>
-          <p class="pull">Vuosien varrella olen oppinut, että kokemus on arvokasta, mutta uteliaisuus ja halu uudistua ovat vähintään yhtä tärkeitä.</p>
+          <p>Uuden liiketoiminta-arvon luominen alkaa siitä, että ymmärtää, mistä kasvu todella syntyy. Työskentelen liiketoiminnan kehittämisen, markkinoinnin ja teknologian rajapinnassa ja autan yrityksiä tunnistamaan mahdollisuudet, terävöittämään suuntaa ja muuttamaan ideat käytännön tuloksiksi.</p>
+          <p>Minulla on yli 25 vuoden kokemus markkinoinnista ja digitaalisesta liiketoiminnasta, ja olen toiminut yrittäjänä, toimitusjohtajana ja osakkaana useissa yrityksissä, myös enemmistöomistajana. Olen ollut keskeisessä roolissa rakentamassa ja kasvattamassa markkinoinnin ja digitaalisen liiketoiminnan yrityksiä aina onnistuneisiin yrityskauppoihin asti. Tausta on muovannut tapaani tehdä liiketoimintaa: yhdistän strategisen ajattelun, kaupallisen ymmärryksen ja käytännön toteutuksen.</p>
+          <p>Nykyisin keskityn erityisesti siihen, miten data, tekoäly ja uudet työtavat luovat arvoa, parantavat päätöksentekoa ja tekevät liiketoiminnasta tehokkaampaa.</p>
+          <p class="pull">Teknologian tulee palvella liiketoiminnan tavoitteita, ei päinvastoin. Kokemus antaa perspektiiviä, uteliaisuus ja uusi teknologia avaavat mahdollisuuksia.</p>
         </div>
       </div>
     </section>
@@ -248,30 +267,49 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
           <ul class="tiles">
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l5-5 4 4 8-9"/><path d="M15 7h5v5"/></svg>Markkinointi</li>
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>Liiketoiminnan kehittäminen</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>Tekoäly</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>Tekoäly ja data</li>
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>Aktiivinen omistajuus</li>
           </ul>
-          <p>Työskentelen oman yritykseni <a href="https://arviser.fi" target="_blank" rel="noopener">Arviserin</a> kautta markkinoinnin, liiketoiminnan kehittämisen ja tekoälyn parissa. Autan yrityksiä löytämään uusia mahdollisuuksia, kehittämään toimintaansa ja hyödyntämään teknologiaa käytännönläheisesti.</p>
-          <p>Yrittäjyyden lisäksi minua kiinnostaa aktiivinen omistajuus. Olen osakkaana tapahtumatekniikka-alalla toimivissa <a href="https://scenearts.fi" target="_blank" rel="noopener">Scene Artsissa</a> ja <a href="https://sceneartsglobal.com" target="_blank" rel="noopener">SceneArts Globalissa</a>, joiden liiketoiminnan kehittämiseen osallistun markkinoinnin ja muun neuvonannon keinoin.</p>
-          <p>Pidän erityisesti tilanteista, joissa kokemus, uudet ideat ja käytännön tekeminen kohtaavat.</p>
+          <p>Työskentelen oman yritykseni <a href="https://arviser.fi" target="_blank" rel="noopener">Arviserin</a> kautta markkinoinnin, datan ja tekoälyn parissa. Yrityksille se tarkoittaa uusien mahdollisuuksien löytämistä, parempia tuloksia ja fiksumpia tapoja tehdä työtä. Painopiste on käytännön ratkaisuissa ja mitattavassa liiketoimintahyödyssä.</p>
+          <p>Yrittäjyyden lisäksi olen mukana aktiivisena omistajana ja sijoittajana silloin, kun oma osaamiseni voi kasvattaa yrityksen arvoa. Olen osakkaana tapahtumatekniikka-alalla toimivissa <a href="https://scenearts.fi" target="_blank" rel="noopener">Scene Artsissa</a> ja <a href="https://sceneartsglobal.com" target="_blank" rel="noopener">SceneArts Globalissa</a>, joiden liiketoiminnan kehittämiseen osallistun markkinoinnin ja muun neuvonannon keinoin.</p>
+          <p>Olen myös Tampereen kauppakamarin hyväksymä hallituksen jäsen (HHJ), joten tuon pöytään osaamista myös hallitustyöskentelyyn.</p>
+          <ul class="logos" aria-label="Nykyiset yritykset">
+            <li><img src="/logos/arviser.svg" alt="Arviser" class="l-arviser" height="26" width="117" loading="lazy"></li>
+            <li><img src="/logos/scenearts.svg" alt="SceneArts" class="l-sa" height="22" width="131" loading="lazy"></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="block" id="muuta">
+    <section class="block" id="ura">
       <div class="cols">
-        <div class="head"><span class="num">03</span><h2>Muutakin kuin työtä</h2></div>
+        <div class="head"><span class="num">03</span><h2>Tausta</h2></div>
         <div class="prose">
-          <ul class="tiles">
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 6.2A7.2 7.2 0 1 0 17.5 17.8"/><path d="M4.5 10h9.5M4.5 14h9.5"/></svg>Sijoittaminen</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9.5 3v3M14.5 3v3M9.5 18v3M14.5 18v3M3 9.5h3M3 14.5h3M18 9.5h3M18 14.5h3"/><rect x="10" y="10" width="4" height="4"/></svg>Teknologia</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.6 21.5c.1-4.2.3-8.2.6-12"/><path d="M13.2 9.5C11.7 6.5 8.5 5.3 5 6.3"/><path d="M13.2 9.5c-.2-3.5 1.8-5.7 5.3-6.2"/><path d="M13.2 9.5c3-1.6 5.8-1 7.8 1.3"/><path d="M13.2 9.5c-3.2-.2-5.7 1.3-6.8 3.8"/><path d="M13.2 9.5c2.7.9 3.9 3.4 3.5 6"/></svg>Matkustaminen</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 18a8.5 8.5 0 1 1 17 0"/><path d="M12 18l4.2-5.2"/><circle cx="12" cy="18" r="1.2"/><path d="M5.6 12.4l1.1.7M8.4 8.6l.7 1.1M12 7.2v1.3M15.6 8.6l-.7 1.1M18.4 12.4l-1.1.7"/></svg>Moottoripyöräily</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l11-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg>Musiikki</li>
-          </ul>
-          <p>Olen kiinnostunut sijoittamisesta, teknologiasta, matkustamisesta ja uusista kokemuksista. Kesäisin harrastan myös moottoripyöräilyä. <a href="https://youtube.com/@northernnoisedepartment" target="_blank" rel="noopener">Musiikki</a> on kulkenut mukana elämässäni, vaikka aktiivinen soittaminen on viime vuosina jäänyt vähemmälle.</p>
-          <p>Sijoittamisessa minua kiehtoo erityisesti pitkäjänteisyys ja mahdollisuus rakentaa vapautta päättää omasta ajankäytöstäni.</p>
-          <p>Arvostan mahdollisuutta tehdä kiinnostavia asioita, oppia uutta ja käyttää aikaani itselleni merkityksellisellä tavalla.</p>
+          <ol class="timeline">
+            <li><div class="when"><span class="yrs">2026–</span><b class="role">Markkinointijohtaja ja osakas</b></div><div class="co"><strong>SceneArts Global</strong><span class="what">Kansainvälisten tapahtumien tekninen johtaminen.</span></div></li>
+            <li><div class="when"><span class="yrs">2025–</span><b class="role">Yrittäjä</b></div><div class="co"><strong>Arviser</strong><span class="what">Auttaa yrityksiä luomaan uutta liiketoiminta-arvoa markkinoinnin, datan ja tekoälyn avulla.</span></div></li>
+            <li><div class="when"><span class="yrs">2023–</span><b class="role">Senior Advisor ja osakas</b></div><div class="co"><strong>Scene Arts</strong><span class="what">Tapahtumien teknisen tuotannon kumppani yrityksille ja tapahtumajärjestäjille.</span></div></li>
+            <li><div class="when"><span class="yrs">2020–2023</span><b class="role">Kehitysjohtaja</b></div><div class="co"><strong>Myynninmaailma</strong><span class="what">B2B-markkinointitoimisto kasvuhakuisille yrityksille.</span></div></li>
+            <li><div class="when"><span class="yrs">2015–2022</span><b class="role">Perustaja ja toimitusjohtaja</b></div><div class="co"><strong>Digimoguli</strong><span class="what">Oululainen digitoimisto, osa Myynninmaailmaa vuodesta 2020.</span></div></li>
+            <li><div class="when"><span class="yrs">2013–2021</span><b class="role">Digitaalisen markkinoinnin neuvonantaja ja osakas</b></div><div class="co"><strong>Oz MAX</strong><span class="what">Kuntokeskus: kuntosalit, toiminnallinen harjoittelu ja ryhmäliikunta.</span></div></li>
+            <li><div class="when"><span class="yrs">2000–2016</span><b class="role">Perustaja ja toimitusjohtaja</b></div><div class="co"><strong>Leffatykki</strong><span class="what">Suomen suurin elokuvayhteisö ja arvostelusivusto. Myytiin isommalle mediayhtiölle.</span></div></li>
+            <li><div class="when"><span class="yrs">2000–2015</span><b class="role">Osakas ja useita rooleja, viimeisimpänä kehitysjohtaja</b></div><div class="co"><strong>Avalon</strong><span class="what">Mainostoimisto, jossa digimarkkinointi oli ydintä. Nykyisin osa Digiaa.</span></div></li>
+            <li><div class="when"><span class="yrs">1998–2000</span><b class="role">Web-suunnittelija</b></div><div class="co"><strong>Nedecon</strong><span class="what">Uuden median yritys, yksi ensimmäisistä Helsingin pörssiin listatuista alalla.</span></div></li>
+          </ol>
+
+          <h3 class="sub">Jatkuva oppiminen</h3>
+          <p class="sub-text">Olen opiskellut koko uran ajan. Aiheet ovat laajentuneet mediasta ja verkkoliiketoiminnasta markkinointiin, johtamiseen, dataan ja tekoälyyn.</p>
+          <div class="learn" role="img" aria-label="Opintojen aiheet vuosittain: media ja tuotanto 1990-luvun alussa, verkkoliiketoiminta 1990-luvun lopulla ja 2005, markkinointi ja viestintä 1999–2018, johtaminen ja yrittäjyys 2012–2019, data ja analytiikka 2015–2016 ja 2026, tekoäly 2023 ja tapahtumaliiketoiminta 2024.">
+            <div class="lr"><span class="ln">Media ja tuotanto</span><div class="lt"><i style="left:2.56%;width:10.26%"></i></div></div>
+            <div class="lr"><span class="ln">Verkkoliiketoiminta</span><div class="lt"><i style="left:15.38%;width:7.69%"></i><i style="left:38.46%;width:2.56%"></i></div></div>
+            <div class="lr"><span class="ln">Markkinointi ja viestintä</span><div class="lt"><i style="left:23.08%;width:5.13%"></i><i style="left:51.28%;width:7.69%"></i><i style="left:64.1%;width:7.69%"></i></div></div>
+            <div class="lr"><span class="ln">Johtaminen ja yrittäjyys</span><div class="lt"><i style="left:56.41%;width:5.13%"></i><i style="left:64.1%;width:2.56%"></i><i style="left:74.36%;width:2.56%"></i></div></div>
+            <div class="lr"><span class="ln">Data ja analytiikka</span><div class="lt"><i style="left:64.1%;width:5.13%"></i><i style="left:92.31%;width:2.56%"></i></div></div>
+            <div class="lr"><span class="ln">Tekoäly</span><div class="lt"><i style="left:84.62%;width:2.56%"></i></div></div>
+            <div class="lr"><span class="ln">Tapahtumaliiketoiminta</span><div class="lt"><i style="left:87.18%;width:2.56%"></i></div></div>
+            <div class="lr axis"><span class="ln"></span><div class="lt"><span style="left:0.0%">1990</span><span style="left:25.64%">2000</span><span style="left:51.28%">2010</span><span style="left:76.92%">2020</span></div></div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -280,7 +318,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
       <div class="contact">
         <div>
           <h2>Ollaan yhteydessä</h2>
-          <p>Uudet ajatukset, kiinnostavat hankkeet ja hyvät keskustelut ovat aina tervetulleita. Minut tavoittaa sähköpostilla tai LinkedInin kautta.</p>
+          <p>Keskustelen mielelläni liiketoiminnasta, kasvusta ja uuden arvon luomisesta. Minut tavoittaa sähköpostilla tai LinkedInin kautta.</p>
         </div>
         <div class="links">
           <a class="btn primary" href="mailto:arto@arviser.fi">Sähköposti <span aria-hidden="true">→</span></a>

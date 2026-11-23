@@ -30,20 +30,20 @@
 <style>
 /* Layout idea: aurora-lit hero over an asymmetric editorial grid; wide geometric display type, sticky section headings, dark contact panel. */
 :root {
-  --bg: #f5f1ea;
-  --surface: #fffdf9;
-  --ink: #1a1612;
-  --muted: #6a6258;
-  --line: #ddd5c8;
-  --accent: #0a7466;
-  --accent-ink: #ffffff;
-  --aurora-1: rgba(32, 201, 151, .34);
-  --aurora-2: rgba(42, 165, 201, .28);
-  --aurora-3: rgba(124, 108, 240, .18);
-  --grid: rgba(26, 22, 18, .035);
+  --bg: #12100d;
+  --surface: #1b1814;
+  --ink: #f4efe8;
+  --muted: #a89f92;
+  --line: #2e2923;
+  --accent: #4fd8bd;
+  --accent-ink: #04201a;
+  --aurora-1: rgba(32, 201, 151, .42);
+  --aurora-2: rgba(42, 165, 201, .36);
+  --aurora-3: rgba(124, 108, 240, .28);
+  --grid: rgba(244, 239, 232, .05);
   --font-display: "Unbounded", "Arial Black", system-ui, sans-serif;
   --font-body: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
-  color-scheme: light;
+  color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -114,7 +114,7 @@ a { color: inherit; }
 .hero { padding: clamp(56px, 9vw, 120px) 0 clamp(56px, 8vw, 104px); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 400px); gap: clamp(32px, 6vw, 96px); align-items: center; }
 .hero-photo { margin: 0; }
-.hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 35% 40%; border-radius: 24px; border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent); box-shadow: 0 40px 80px -40px rgba(0,0,0,.5); }
+.hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 5 / 6; object-fit: cover; object-position: 50% 50%; border-radius: 24px; border: 1px solid color-mix(in srgb, var(--ink) 16%, transparent); box-shadow: 0 40px 80px -40px rgba(0,0,0,.5); }
 .hero-grid > div { position: relative; z-index: 1; }
 .hero-sub { display: grid; gap: 20px; max-width: 52ch; }
 .hero-sub .tagline, .hero-sub .lead { margin: 0; }
@@ -136,7 +136,7 @@ h1 .grad { background: linear-gradient(100deg, var(--accent) 10%, #2aa5c9 60%, #
 .logos img { display: block; opacity: .5; transition: opacity .2s; }
 .logos .l-arviser { height: 26px; width: 117px; }
 .logos .l-sa { height: 22px; width: 131px; }
-@media (prefers-color-scheme: dark) { .logos img { filter: invert(1); opacity: .6; } }
+.logos img { filter: invert(1); opacity: .6; }
 .hbtn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-size: 15px; font-weight: 500; padding: 13px 22px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); transition: transform .15s, border-color .15s; }
 .hbtn:hover { transform: translateY(-1px); border-color: var(--accent); }
 .hbtn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
@@ -258,7 +258,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
             </div>
           </div>
         </div>
-        <figure class="hero-photo"><img src="arto-hero.jpg" width="960" height="1200" alt="Arto Remes" fetchpriority="high"></figure>
+        <figure class="hero-photo"><picture><source srcset="arto-hero.webp" type="image/webp"><img src="arto-hero.jpg" width="900" height="1080" alt="Arto Remes" fetchpriority="high"></picture></figure>
       </div>
     </div>
   </div>

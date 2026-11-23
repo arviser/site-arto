@@ -134,10 +134,9 @@ h1 .grad { background: linear-gradient(100deg, var(--accent) 10%, #2aa5c9 60%, #
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
 .logos { list-style: none; margin: 36px 0 0; padding: 28px 0 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: center; gap: 28px 44px; }
 .logos img { display: block; opacity: .5; transition: opacity .2s; }
-.logos a:hover img { opacity: .9; }
 .logos .l-arviser { height: 26px; width: 117px; }
 .logos .l-sa { height: 22px; width: 131px; }
-@media (prefers-color-scheme: dark) { .logos img { filter: invert(1); opacity: .6; } .logos a:hover img { opacity: 1; } }
+@media (prefers-color-scheme: dark) { .logos img { filter: invert(1); opacity: .6; } }
 .hbtn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-size: 15px; font-weight: 500; padding: 13px 22px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); transition: transform .15s, border-color .15s; }
 .hbtn:hover { transform: translateY(-1px); border-color: var(--accent); }
 .hbtn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
@@ -291,8 +290,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
           <p>Yrittäjyyden lisäksi olen mukana aktiivisena omistajana ja sijoittajana silloin, kun oma osaamiseni voi kasvattaa yrityksen arvoa. Olen osakkaana tapahtumatekniikka-alalla toimivissa <a href="https://scenearts.fi" target="_blank" rel="noopener">Scene Artsissa</a> ja <a href="https://sceneartsglobal.com" target="_blank" rel="noopener">SceneArts Globalissa</a>, joiden liiketoiminnan kehittämiseen osallistun markkinoinnin ja muun neuvonannon keinoin.</p>
           <p>Olen myös Tampereen kauppakamarin hyväksymä hallituksen jäsen (HHJ), joten tuon pöytään osaamista myös hallitustyöskentelyyn.</p>
           <ul class="logos" aria-label="Nykyiset yritykset">
-            <li><a href="https://arviser.fi" target="_blank" rel="noopener" aria-label="Arviser"><img src="/logos/arviser.svg" alt="Arviser" class="l-arviser" height="26" width="117" loading="lazy"></a></li>
-            <li><a href="https://scenearts.fi" target="_blank" rel="noopener" aria-label="Scene Arts ja SceneArts Global"><img src="/logos/scenearts.svg" alt="SceneArts" class="l-sa" height="22" width="131" loading="lazy"></a></li>
+            <li><img src="/logos/arviser.svg" alt="Arviser" class="l-arviser" height="26" width="117" loading="lazy"></li>
+            <li><img src="/logos/scenearts.svg" alt="SceneArts" class="l-sa" height="22" width="131" loading="lazy"></li>
           </ul>
         </div>
       </div>

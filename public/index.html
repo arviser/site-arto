@@ -162,6 +162,16 @@ h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 
 .timeline .role { display: block; font-weight: 500; font-size: 15px; line-height: 1.4; margin-top: 6px; }
 .timeline strong { display: block; font-weight: 600; font-size: 18px; }
 .timeline .what { display: block; color: var(--muted); margin-top: 4px; line-height: 1.5; font-size: 15px; }
+.sub { font-family: var(--font-display); font-size: 18px; letter-spacing: -0.02em; font-weight: 500; margin: 2.6em 0 10px; }
+.sub-text { color: var(--muted); font-size: 16px; margin: 0 0 22px; max-width: 52ch; }
+.learn { display: grid; gap: 10px; }
+.lr { display: grid; grid-template-columns: 210px 1fr; gap: 24px; align-items: center; }
+.ln { font-size: 15px; font-weight: 500; }
+.lt { position: relative; height: 18px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.lt i { position: absolute; top: 0; bottom: 0; min-width: 14px; border-radius: 999px; background: linear-gradient(90deg, var(--accent), #2aa5c9); }
+.axis .lt { background: none; height: 20px; }
+.axis .lt span { position: absolute; top: 0; transform: translateX(-50%); font-size: 12px; color: var(--muted); }
+.axis .lt span:first-child { transform: none; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 1.8em; padding: 0; list-style: none; }
 .chips li { font-size: 14px; font-weight: 500; border: 1px solid var(--line); background: var(--surface); padding: 6px 15px; border-radius: 999px; }
 
@@ -198,6 +208,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
   .prose p:first-of-type:not(.pull) { font-size: 18px; }
   .tiles { grid-template-columns: 1fr; gap: 10px; }
   .timeline li { grid-template-columns: 1fr; gap: 10px; }
+  .lr { grid-template-columns: 1fr; gap: 6px; }
+  .axis .ln { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
 </style>
@@ -282,6 +294,19 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
             <li><div class="when"><span class="yrs">2000–2015</span><b class="role">Kehitysjohtaja ja osakas</b></div><div class="co"><strong>Avalon</strong><span class="what">Digimarkkinointitoimisto: some-markkinointia, dataa ja analytiikkaa sekä markkinoinnin automaatiota.</span></div></li>
             <li><div class="when"><span class="yrs">1998–2000</span><b class="role">Web-suunnittelija</b></div><div class="co"><strong>Nedecon</strong><span class="what">Uuden median yritys, yksi ensimmäisistä Helsingin pörssiin listatuista alalla.</span></div></li>
           </ol>
+
+          <h3 class="sub">Jatkuva oppiminen</h3>
+          <p class="sub-text">Olen opiskellut koko uran ajan. Aiheet ovat laajentuneet mediasta ja verkkotekniikasta markkinointiin, johtamiseen, dataan ja tekoälyyn.</p>
+          <div class="learn" role="img" aria-label="Opintojen aiheet vuosittain: media ja tuotanto 1990-luvun alussa, verkko ja teknologia 1990-luvun lopulla ja 2005, markkinointi ja viestintä 1999–2018, johtaminen ja yrittäjyys 2012–2019, data ja analytiikka 2015–2016 ja 2026, tekoäly 2023 ja tapahtumaliiketoiminta 2024.">
+            <div class="lr"><span class="ln">Media ja tuotanto</span><div class="lt"><i style="left:2.56%;width:10.26%"></i></div></div>
+            <div class="lr"><span class="ln">Verkko ja teknologia</span><div class="lt"><i style="left:15.38%;width:7.69%"></i><i style="left:38.46%;width:2.56%"></i></div></div>
+            <div class="lr"><span class="ln">Markkinointi ja viestintä</span><div class="lt"><i style="left:23.08%;width:5.13%"></i><i style="left:51.28%;width:7.69%"></i><i style="left:64.1%;width:7.69%"></i></div></div>
+            <div class="lr"><span class="ln">Johtaminen ja yrittäjyys</span><div class="lt"><i style="left:56.41%;width:5.13%"></i><i style="left:64.1%;width:2.56%"></i><i style="left:74.36%;width:2.56%"></i></div></div>
+            <div class="lr"><span class="ln">Data ja analytiikka</span><div class="lt"><i style="left:64.1%;width:5.13%"></i><i style="left:92.31%;width:2.56%"></i></div></div>
+            <div class="lr"><span class="ln">Tekoäly</span><div class="lt"><i style="left:84.62%;width:2.56%"></i></div></div>
+            <div class="lr"><span class="ln">Tapahtumaliiketoiminta</span><div class="lt"><i style="left:87.18%;width:2.56%"></i></div></div>
+            <div class="lr axis"><span class="ln"></span><div class="lt"><span style="left:0.0%">1990</span><span style="left:25.64%">2000</span><span style="left:51.28%">2010</span><span style="left:76.92%">2020</span></div></div>
+          </div>
 
         </div>
       </div>

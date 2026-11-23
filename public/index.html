@@ -31,10 +31,10 @@
 /* Layout idea: aurora-lit hero over an asymmetric editorial grid; wide geometric display type, sticky section headings, dark contact panel. */
 :root {
   --bg: #12100d;
-  --surface: #1b1814;
+  --surface: #1f1b16;
   --ink: #f4efe8;
   --muted: #a89f92;
-  --line: #2e2923;
+  --line: #3b352d;
   --accent: #4fd8bd;
   --accent-ink: #04201a;
   --aurora-1: rgba(32, 201, 151, .42);
@@ -137,7 +137,7 @@ h1 .grad { background: linear-gradient(100deg, var(--accent) 10%, #2aa5c9 60%, #
 .logos .l-arviser { height: 26px; width: 117px; }
 .logos .l-sa { height: 22px; width: 131px; }
 .logos img { filter: invert(1); opacity: .6; }
-.hbtn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-size: 15px; font-weight: 500; padding: 13px 22px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); transition: transform .15s, border-color .15s; }
+.hbtn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-size: 15px; font-weight: 500; padding: 13px 22px; border-radius: 999px; border: 1px solid rgba(244,239,232,.38); background: var(--surface); color: var(--ink); transition: transform .15s, border-color .15s; }
 .hbtn:hover { transform: translateY(-1px); border-color: var(--accent); }
 .hbtn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
@@ -187,7 +187,7 @@ h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 
 .chips li { font-size: 14px; font-weight: 500; border: 1px solid var(--line); background: var(--surface); padding: 6px 15px; border-radius: 999px; }
 
 /* Contact */
-.contact { position: relative; overflow: hidden; isolation: isolate; background: #12100d; color: #f4efe8; border-radius: 28px; padding: clamp(32px, 5vw, 72px); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 40px; align-items: end; }
+.contact { position: relative; overflow: hidden; isolation: isolate; background: #17140f; border: 1px solid rgba(244,239,232,.16); color: #f4efe8; border-radius: 28px; padding: clamp(32px, 5vw, 72px); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 40px; align-items: end; }
 .contact::before { content: ""; position: absolute; inset: -30% -10% auto 30%; height: 160%; z-index: -1; background: radial-gradient(closest-side, rgba(32,201,151,.35), transparent), radial-gradient(closest-side at 80% 30%, rgba(42,165,201,.3), transparent); filter: blur(50px); }
 .contact h2 { color: #f4efe8; font-size: clamp(30px, 4.4vw, 56px); line-height: 1.05; }
 .contact p { margin: 18px 0 0; max-width: 46ch; color: rgba(244,239,232,.72); }

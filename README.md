@@ -4,7 +4,7 @@ Arto Remesin henkilökohtainen verkkosivusto. Yksi käsin tehty staattinen HTML-
 
 ## Rakenne
 
-- `public/`: julkaistava sivusto (`index.html`, `arto-hero.jpg`, faviconit, `apple-touch-icon.png`, `og-image.png`, `robots.txt`, `_headers`).
+- `public/`: julkaistava sivusto (`index.html`, `arto-hero.jpg`, faviconit, `apple-touch-icon.png`, `og-arto.png`, `robots.txt`, `_headers`).
 - `scripts/build.mjs`: kirjoittaa `public/sitemap.xml`. `sitemap.xml` ei ole mukana gitissä.
 
 ## Cloudflare Pages
@@ -29,7 +29,7 @@ Arto Remesin henkilökohtainen verkkosivusto. Yksi käsin tehty staattinen HTML-
 
 - Tekstit ovat Arton omia: älä muuta sisältöä pyytämättä.
 - Fontit: Unbounded (otsikot) ja Geist (leipäteksti) Google Fontsista. Aksenttiväri teal `#0a7466` (tumma teema `#4fd8bd`). Vaalea ja tumma teema `prefers-color-scheme`n mukaan.
-- Jakokuva `public/og-image.png` (1200×630), `og:image` osoittaa osoitteeseen https://artoremes.fi/og-image.png.
+- Jakokuva `public/og-arto.png` (1200×630, ilman valokuvaa), `og:image` osoittaa osoitteeseen https://artoremes.fi/og-arto.png.
 - Kuvapolut `index.html`:ssä ovat suhteellisia.
 
 ## Paikallinen rakennus

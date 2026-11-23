@@ -23,43 +23,27 @@
 <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://artoremes.fi/">
-<meta name="theme-color" content="#12100d">
+<meta name="theme-color" content="#f5f1ea">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 /* Layout idea: aurora-lit hero over an asymmetric editorial grid; wide geometric display type, sticky section headings, dark contact panel. */
 :root {
-  --bg: #12100d;
-  --surface: #1f1b16;
-  --ink: #f4efe8;
-  --muted: #a89f92;
-  --line: #3b352d;
-  --accent: #4fd8bd;
-  --accent-ink: #04201a;
-  --aurora-1: rgba(32, 201, 151, .42);
-  --aurora-2: rgba(42, 165, 201, .36);
-  --aurora-3: rgba(124, 108, 240, .28);
-  --grid: rgba(244, 239, 232, .05);
+  --bg: #f5f1ea;
+  --surface: #fffdf9;
+  --ink: #1a1612;
+  --muted: #6a6258;
+  --line: #ddd5c8;
+  --accent: #0a7466;
+  --accent-ink: #ffffff;
+  --aurora-1: rgba(32, 201, 151, .34);
+  --aurora-2: rgba(42, 165, 201, .28);
+  --aurora-3: rgba(124, 108, 240, .18);
+  --grid: rgba(26, 22, 18, .035);
   --font-display: "Unbounded", "Arial Black", system-ui, sans-serif;
   --font-body: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
-  color-scheme: dark;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #12100d; --surface: #1b1814; --ink: #f4efe8; --muted: #a89f92;
-    --line: #2e2923; --accent: #4fd8bd; --accent-ink: #04201a;
-    --aurora-1: rgba(32, 201, 151, .42); --aurora-2: rgba(42, 165, 201, .36); --aurora-3: rgba(124, 108, 240, .28);
-    --grid: rgba(244, 239, 232, .05);
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #12100d; --surface: #1b1814; --ink: #f4efe8; --muted: #a89f92;
-  --line: #2e2923; --accent: #4fd8bd; --accent-ink: #04201a;
-  --aurora-1: rgba(32, 201, 151, .42); --aurora-2: rgba(42, 165, 201, .36); --aurora-3: rgba(124, 108, 240, .28);
-  --grid: rgba(244, 239, 232, .05);
-  color-scheme: dark;
+  color-scheme: light;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
@@ -136,8 +120,8 @@ h1 .grad { background: linear-gradient(100deg, var(--accent) 10%, #2aa5c9 60%, #
 .logos img { display: block; opacity: .5; transition: opacity .2s; }
 .logos .l-arviser { height: 26px; width: 117px; }
 .logos .l-sa { height: 22px; width: 131px; }
-.logos img { filter: invert(1); opacity: .6; }
-.hbtn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-size: 15px; font-weight: 500; padding: 13px 22px; border-radius: 999px; border: 1px solid rgba(244,239,232,.38); background: var(--surface); color: var(--ink); transition: transform .15s, border-color .15s; }
+
+.hbtn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-size: 15px; font-weight: 500; padding: 13px 22px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); transition: transform .15s, border-color .15s; }
 .hbtn:hover { transform: translateY(-1px); border-color: var(--accent); }
 .hbtn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
@@ -187,7 +171,7 @@ h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(24px, 
 .chips li { font-size: 14px; font-weight: 500; border: 1px solid var(--line); background: var(--surface); padding: 6px 15px; border-radius: 999px; }
 
 /* Contact */
-.contact { position: relative; overflow: hidden; isolation: isolate; background: #17140f; border: 1px solid rgba(244,239,232,.16); color: #f4efe8; border-radius: 28px; padding: clamp(32px, 5vw, 72px); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 40px; align-items: end; }
+.contact { position: relative; overflow: hidden; isolation: isolate; background: #12100d; color: #f4efe8; border-radius: 28px; padding: clamp(32px, 5vw, 72px); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 40px; align-items: end; }
 .contact::before { content: ""; position: absolute; inset: -30% -10% auto 30%; height: 160%; z-index: -1; background: radial-gradient(closest-side, rgba(32,201,151,.35), transparent), radial-gradient(closest-side at 80% 30%, rgba(42,165,201,.3), transparent); filter: blur(50px); }
 .contact h2 { color: #f4efe8; font-size: clamp(30px, 4.4vw, 56px); line-height: 1.05; }
 .contact p { margin: 18px 0 0; max-width: 46ch; color: rgba(244,239,232,.72); }
